@@ -1,19 +1,27 @@
 package com.allianz.test;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginUITest {
+import com.allianz.base.AutomationWrapper;
+
+
+
+public class LoginUITest extends AutomationWrapper {
+	
 	@Test
 	public void titleTest()
 	{
-		System.out.println("Login page Title ");
+		String actualTitle=driver.getTitle();
+		Assert.assertEquals(actualTitle, "OrangeHRM");
 	}
-@Test
-public void descriptionDetails()
-{
-	System.out.println("this is the first login page");
+	
+	@Test
+	public void applicationDescriptionTest()
+	{
+		String actualVersion=driver.findElement(By.xpath("//p[contains(normalize-space(),'OS')]")).getText();
+		Assert.assertEquals(actualVersion, "OrangeHRM OS 5.6.1");
+	}
+
 }
-
-
-}
-
