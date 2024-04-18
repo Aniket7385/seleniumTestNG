@@ -2,16 +2,24 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-03T23:14:05 PDT" name="Default suite" finished-at="2024-04-03T23:14:15 PDT" duration-ms="10095">
+  <suite started-at="2024-04-18T03:51:23 PDT" name="Default suite" finished-at="2024-04-18T03:51:44 PDT" duration-ms="21095">
     <groups>
     </groups>
-    <test started-at="2024-04-03T23:14:05 PDT" name="Default test" finished-at="2024-04-03T23:14:15 PDT" duration-ms="10095">
-      <class name="com.allianz.test.LoginUITest">
-        <test-method signature="titleTest()[pri:0, instance:com.allianz.test.LoginUITest@bd4dc25]" started-at="2024-04-03T23:14:05 PDT" name="titleTest" finished-at="2024-04-03T23:14:15 PDT" duration-ms="9963" status="PASS">
+    <test started-at="2024-04-18T03:51:23 PDT" name="Default test" finished-at="2024-04-18T03:51:44 PDT" duration-ms="21095">
+      <class name="com.allianz.test.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.LoginTest@4229bb3f]" started-at="2024-04-18T03:51:23 PDT" name="setup" finished-at="2024-04-18T03:51:40 PDT" duration-ms="16381" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-      </class> <!-- com.allianz.test.LoginUITest -->
+        </test-method> <!-- setup -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.allianz.test.LoginTest@4229bb3f]" started-at="2024-04-18T03:51:40 PDT" name="validLoginTest" finished-at="2024-04-18T03:51:44 PDT" duration-ms="4122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.LoginTest@4229bb3f]" started-at="2024-04-18T03:51:44 PDT" name="teardown" finished-at="2024-04-18T03:51:44 PDT" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.allianz.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
